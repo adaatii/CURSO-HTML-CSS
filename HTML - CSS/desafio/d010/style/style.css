@@ -26,15 +26,14 @@
     padding: 0px;
 }
 
-
-
-
-
 body{
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after{
+    content: '\1F517';
+}
 
 header{
     background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
@@ -81,12 +80,7 @@ nav > a {
 nav > a:hover{
     background-color: var(--cor3);
     color: var(--cor5);
-
-
 }
-
-
-
 
 main{
     
@@ -111,8 +105,7 @@ main h2{
     color: var(--cor4);
     font-size: 1.3em;
     background-image: linear-gradient(to right, var(--cor1),transparent);
-    text-indent: 8px;
-    
+    text-indent: 8px;    
 }
 
 main p{
@@ -151,7 +144,42 @@ main img.pequena{
     margin: auto;
 }
 
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /*margem negativa */
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
 footer{
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
